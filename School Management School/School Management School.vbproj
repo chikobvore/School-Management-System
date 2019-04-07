@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{311B1925-7309-40E6-9FAA-5624AF59C9EA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>School_Management_School.My.MyApplication</StartupObject>
+    <RootNamespace>School_Management_School</RootNamespace>
+    <AssemblyName>Kariangwe High School</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Kariangwe High School.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Kariangwe High School.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>black_wheat_and_mortarboard_NLg_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>..\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Allocations.Designer.vb">
+      <DependentUpon>Allocations.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Allocations.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Bursar.Designer.vb">
+      <DependentUpon>Bursar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Bursar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clerk.Designer.vb">
+      <DependentUpon>clerk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clerk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="department.Designer.vb">
+      <DependentUpon>department.vb</DependentUpon>
+    </Compile>
+    <Compile Include="department.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="departments.Designer.vb">
+      <DependentUpon>departments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="departments.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deputy.Designer.vb">
+      <DependentUpon>Deputy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Deputy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expense manager.Designer.vb">
+      <DependentUpon>expense manager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="expense manager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="expense.Designer.vb">
+      <DependentUpon>expense.vb</DependentUpon>
+    </Compile>
+    <Compile Include="expense.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fees.Designer.vb">
+      <DependentUpon>fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funds.Designer.vb">
+      <DependentUpon>Funds.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Funds.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Goods.Designer.vb">
+      <DependentUpon>Goods.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Goods.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="payment.Designer.vb">
+      <DependentUpon>payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="payment_plan.Designer.vb">
+      <DependentUpon>payment_plan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment_plan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="services.Designer.vb">
+      <DependentUpon>services.vb</DependentUpon>
+    </Compile>
+    <Compile Include="services.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sponsored.Designer.vb">
+      <DependentUpon>sponsored.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sponsored.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sponsors.Designer.vb">
+      <DependentUpon>sponsors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sponsors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sponsor_details.Designer.vb">
+      <DependentUpon>sponsor_details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="sponsor_details.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff.Designer.vb">
+      <DependentUpon>staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="student.Designer.vb">
+      <DependentUpon>student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="summaries.Designer.vb">
+      <DependentUpon>summaries.vb</DependentUpon>
+    </Compile>
+    <Compile Include="summaries.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Term.Designer.vb">
+      <DependentUpon>Term.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Term.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transfers.Designer.vb">
+      <DependentUpon>Transfers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transfers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_sponsors.Designer.vb">
+      <DependentUpon>view_sponsors.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_sponsors.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_students.Designer.vb">
+      <DependentUpon>view_students.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_students.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Allocations.resx">
+      <DependentUpon>Allocations.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Bursar.resx">
+      <DependentUpon>Bursar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clerk.resx">
+      <DependentUpon>clerk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="department.resx">
+      <DependentUpon>department.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="departments.resx">
+      <DependentUpon>departments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deputy.resx">
+      <DependentUpon>Deputy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expense manager.resx">
+      <DependentUpon>expense manager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="expense.resx">
+      <DependentUpon>expense.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fees.resx">
+      <DependentUpon>fees.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funds.resx">
+      <DependentUpon>Funds.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Goods.resx">
+      <DependentUpon>Goods.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment_plan.resx">
+      <DependentUpon>payment_plan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="services.resx">
+      <DependentUpon>services.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sponsored.resx">
+      <DependentUpon>sponsored.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sponsors.resx">
+      <DependentUpon>sponsors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sponsor_details.resx">
+      <DependentUpon>sponsor_details.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff.resx">
+      <DependentUpon>staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="student.resx">
+      <DependentUpon>student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="summaries.resx">
+      <DependentUpon>summaries.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Term.resx">
+      <DependentUpon>Term.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transfers.resx">
+      <DependentUpon>Transfers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_sponsors.resx">
+      <DependentUpon>view_sponsors.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_students.resx">
+      <DependentUpon>view_students.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="black_wheat_and_mortarboard_NLg_icon.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

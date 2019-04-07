@@ -1,0 +1,42 @@
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School Management School.vbprojAssemblyReference.cache
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Form1.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Resources.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School Management School.vbproj.GenerateResource.cache
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School Management School.vbproj.CoreCompileInputs.cache
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Deputy.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.login.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.signup.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Bursar.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.clerk.resources
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\Kariangwe High School.exe.config
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\Kariangwe High School.exe
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\Kariangwe High School.pdb
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\Kariangwe High School.xml
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\System.Data.dll
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School Management School.vbproj.CopyComplete
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\Kariangwe High School.exe
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\Kariangwe High School.xml
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\Kariangwe High School.pdb
+C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\MySql.Data.DLL
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.new_staff.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.staff.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.sponsors.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.student.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.view_students.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.sponsor_details.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.sponsored.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.departments.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Allocations.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.view_sponsors.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.payment.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.expense.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.payment_plan.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.summaries.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.fees.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.manager.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.department.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.goods.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Funds.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.services.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Transfers.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Term.resources
