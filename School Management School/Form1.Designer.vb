@@ -34,7 +34,6 @@ Partial Class Form1
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip5 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
@@ -215,28 +214,22 @@ Partial Class Form1
         Me.MenuStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13})
         Me.MenuStrip5.Location = New System.Drawing.Point(68, 19)
         Me.MenuStrip5.Name = "MenuStrip5"
-        Me.MenuStrip5.Size = New System.Drawing.Size(104, 33)
+        Me.MenuStrip5.Size = New System.Drawing.Size(224, 33)
         Me.MenuStrip5.TabIndex = 1
         Me.MenuStrip5.Text = "MenuStrip5"
         '
         'ToolStripMenuItem13
         '
-        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem14, Me.ToolStripMenuItem15})
+        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15})
         Me.ToolStripMenuItem13.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
         Me.ToolStripMenuItem13.Size = New System.Drawing.Size(96, 29)
         Me.ToolStripMenuItem13.Text = "Statistics"
         '
-        'ToolStripMenuItem14
-        '
-        Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(226, 30)
-        Me.ToolStripMenuItem14.Text = "Academic results"
-        '
         'ToolStripMenuItem15
         '
         Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(226, 30)
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem15.Text = "School statistics"
         '
         'Panel10
@@ -715,7 +708,6 @@ Partial Class Form1
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents MenuStrip5 As MenuStrip
     Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem14 As ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
     Friend WithEvents Panel10 As Panel
     Friend WithEvents PictureBox9 As PictureBox

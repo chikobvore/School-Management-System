@@ -230,6 +230,12 @@
     <Compile Include="staff.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="statistics.Designer.vb">
+      <DependentUpon>statistics.vb</DependentUpon>
+    </Compile>
+    <Compile Include="statistics.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="student.Designer.vb">
       <DependentUpon>student.vb</DependentUpon>
     </Compile>
@@ -339,6 +345,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="staff.resx">
       <DependentUpon>staff.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="statistics.resx">
+      <DependentUpon>statistics.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="student.resx">
       <DependentUpon>student.vb</DependentUpon>

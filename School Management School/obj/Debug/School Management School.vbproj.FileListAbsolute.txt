@@ -40,3 +40,4 @@ C:\Users\me\source\repos\School Management School\School Management School\obj\D
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.services.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Transfers.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Term.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.statistics.resources

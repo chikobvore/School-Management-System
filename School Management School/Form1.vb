@@ -76,7 +76,7 @@ Public Class Form1
 
     End Sub
 
-    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
+    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -109,7 +109,7 @@ Public Class Form1
     End Sub
 
     Private Sub ServicesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServicesToolStripMenuItem.Click
-        services.show()
+        services.Show()
     End Sub
 
     Private Sub TransfersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransfersToolStripMenuItem.Click
@@ -118,5 +118,9 @@ Public Class Form1
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Term.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem15.Click
+        statistics.Show()
     End Sub
 End Class
