@@ -265,9 +265,9 @@ Partial Class student
         Me.Button1.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.ForeColor = System.Drawing.Color.Green
-        Me.Button1.Location = New System.Drawing.Point(363, 380)
+        Me.Button1.Location = New System.Drawing.Point(403, 374)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(209, 54)
+        Me.Button1.Size = New System.Drawing.Size(148, 54)
         Me.Button1.TabIndex = 25
         Me.Button1.Text = "Add Student"
         Me.Button1.UseVisualStyleBackColor = False

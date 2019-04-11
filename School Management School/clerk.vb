@@ -33,4 +33,9 @@ Public Class clerk
     Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
         departments.Show()
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        assets.Show()
+
+    End Sub
 End Class

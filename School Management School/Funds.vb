@@ -22,6 +22,7 @@ Public Class Funds
 
     Private Sub SchoolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SchoolToolStripMenuItem.Click
         Me.Dispose()
+        Form1.Show()
 
     End Sub
 End Class

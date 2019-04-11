@@ -35,6 +35,7 @@ Partial Class Form1
         Me.MenuStrip5 = New System.Windows.Forms.MenuStrip()
         Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Panel10 = New System.Windows.Forms.Panel()
         Me.PictureBox9 = New System.Windows.Forms.PictureBox()
         Me.MenuStrip4 = New System.Windows.Forms.MenuStrip()
@@ -220,7 +221,7 @@ Partial Class Form1
         '
         'ToolStripMenuItem13
         '
-        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15})
+        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15, Me.ReportsToolStripMenuItem})
         Me.ToolStripMenuItem13.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
         Me.ToolStripMenuItem13.Size = New System.Drawing.Size(96, 29)
@@ -231,6 +232,12 @@ Partial Class Form1
         Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
         Me.ToolStripMenuItem15.Size = New System.Drawing.Size(217, 30)
         Me.ToolStripMenuItem15.Text = "School statistics"
+        '
+        'ReportsToolStripMenuItem
+        '
+        Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
+        Me.ReportsToolStripMenuItem.Text = "Reports"
         '
         'Panel10
         '
@@ -438,38 +445,38 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(174, 30)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(174, 30)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 30)
         Me.ToolStripMenuItem2.Text = "Details"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoodsToolStripMenuItem, Me.ServicesToolStripMenuItem, Me.FundsToolStripMenuItem})
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(174, 30)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 30)
         Me.ToolStripMenuItem3.Text = "Sponsored"
         '
         'GoodsToolStripMenuItem
         '
         Me.GoodsToolStripMenuItem.Name = "GoodsToolStripMenuItem"
-        Me.GoodsToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
+        Me.GoodsToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
         Me.GoodsToolStripMenuItem.Text = "Goods"
         '
         'ServicesToolStripMenuItem
         '
         Me.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem"
-        Me.ServicesToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
+        Me.ServicesToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
         Me.ServicesToolStripMenuItem.Text = "Services"
         '
         'FundsToolStripMenuItem
         '
         Me.FundsToolStripMenuItem.Name = "FundsToolStripMenuItem"
-        Me.FundsToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
+        Me.FundsToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
         Me.FundsToolStripMenuItem.Text = "Funds"
         '
         'Panel7
@@ -726,4 +733,5 @@ Partial Class Form1
     Friend WithEvents ServicesToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents FundsToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TransfersToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ReportsToolStripMenuItem As ToolStripMenuItem
 End Class

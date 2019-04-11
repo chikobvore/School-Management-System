@@ -105,11 +105,12 @@ Public Class Form1
     End Sub
 
     Private Sub FundsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles FundsToolStripMenuItem.Click
-        Funds.Show()
+        sponsoredfunds.Show()
+
     End Sub
 
     Private Sub ServicesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ServicesToolStripMenuItem.Click
-        services.Show()
+        sponsoredservices.Show()
     End Sub
 
     Private Sub TransfersToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TransfersToolStripMenuItem.Click
@@ -122,5 +123,9 @@ Public Class Form1
 
     Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem15.Click
         statistics.Show()
+    End Sub
+
+    Private Sub ReportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportsToolStripMenuItem.Click
+        reports.Show()
     End Sub
 End Class

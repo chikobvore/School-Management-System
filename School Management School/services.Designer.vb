@@ -105,7 +105,7 @@ Partial Class services
         Me.Panel6.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel6.Controls.Add(Me.PictureBox6)
         Me.Panel6.Controls.Add(Me.MenuStrip2)
-        Me.Panel6.Location = New System.Drawing.Point(13, 208)
+        Me.Panel6.Location = New System.Drawing.Point(13, 219)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(197, 73)
         Me.Panel6.TabIndex = 2
@@ -125,7 +125,7 @@ Partial Class services
         Me.MenuStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.SchoolToolStripMenuItem})
         Me.MenuStrip2.Location = New System.Drawing.Point(68, 17)
         Me.MenuStrip2.Name = "MenuStrip2"
-        Me.MenuStrip2.Size = New System.Drawing.Size(202, 33)
+        Me.MenuStrip2.Size = New System.Drawing.Size(82, 33)
         Me.MenuStrip2.TabIndex = 1
         Me.MenuStrip2.Text = "MenuStrip2"
         '
@@ -141,7 +141,7 @@ Partial Class services
         '
         Me.Panel7.BackColor = System.Drawing.SystemColors.ControlLightLight
         Me.Panel7.Controls.Add(Me.PictureBox2)
-        Me.Panel7.Location = New System.Drawing.Point(5, 3)
+        Me.Panel7.Location = New System.Drawing.Point(5, 14)
         Me.Panel7.Name = "Panel7"
         Me.Panel7.Size = New System.Drawing.Size(211, 179)
         Me.Panel7.TabIndex = 3

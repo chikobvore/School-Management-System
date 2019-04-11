@@ -4,7 +4,7 @@ Public Class view_students
     Dim con As String = "server=localhost;user id=root;database=kariangwe_high"
     Dim connection As New MySqlConnection(con)
     Private Sub view_students_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "SELECT student_id,Name,Surname,Date_of_Birth,Gender,form,student_class,address FROM students"
+        Dim sql As String = "SELECT * FROM students"
 
         Try
             Dim adapater As New MySqlDataAdapter(sql, connection)
@@ -67,5 +67,9 @@ Public Class view_students
 
     Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
 
+    End Sub
+
+    Private Sub data_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles data.CellContentClick
+        updatestudent.Show()
     End Sub
 End Class
