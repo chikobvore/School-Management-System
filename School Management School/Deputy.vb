@@ -8,31 +8,31 @@
         login.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs)
         view_sponsors.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem3.Click
+    Private Sub ToolStripMenuItem3_Click(sender As Object, e As EventArgs)
         MsgBox("dont forget me")
     End Sub
 
-    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs) Handles Panel9.Paint
+    Private Sub Panel9_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub PictureBox8_Click(sender As Object, e As EventArgs) Handles PictureBox8.Click
+    Private Sub PictureBox8_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MenuStrip3_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip3.ItemClicked
+    Private Sub MenuStrip3_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem5.Click
+    Private Sub ToolStripMenuItem5_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -40,71 +40,71 @@
 
     End Sub
 
-    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem7.Click
+    Private Sub ToolStripMenuItem7_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem8.Click
+    Private Sub ToolStripMenuItem8_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Panel10_Paint(sender As Object, e As PaintEventArgs) Handles Panel10.Paint
+    Private Sub Panel10_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub PictureBox9_Click(sender As Object, e As EventArgs) Handles PictureBox9.Click
+    Private Sub PictureBox9_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MenuStrip4_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip4.ItemClicked
+    Private Sub MenuStrip4_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem9.Click
+    Private Sub ToolStripMenuItem9_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem10.Click
+    Private Sub ToolStripMenuItem10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem11_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem11.Click
+    Private Sub ToolStripMenuItem11_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem12_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem12.Click
+    Private Sub ToolStripMenuItem12_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Panel11.Paint
+    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
-    Private Sub PictureBox10_Click(sender As Object, e As EventArgs) Handles PictureBox10.Click
+    Private Sub PictureBox10_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub MenuStrip5_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip5.ItemClicked
+    Private Sub MenuStrip5_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem13_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem13.Click
+    Private Sub ToolStripMenuItem13_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem14.Click
+    Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem15.Click
+    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub ToolStripMenuItem16_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem16.Click
+    Private Sub ToolStripMenuItem16_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub PictureBox7_Click(sender As Object, e As EventArgs) Handles PictureBox7.Click
+    Private Sub PictureBox7_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -112,7 +112,7 @@
 
     End Sub
 
-    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs) Handles MenuStrip1.ItemClicked
+    Private Sub MenuStrip1_ItemClicked(sender As Object, e As ToolStripItemClickedEventArgs)
 
     End Sub
 
@@ -152,7 +152,7 @@
         Transfers.Show()
     End Sub
 
-    Private Sub Panel8_Paint(sender As Object, e As PaintEventArgs) Handles Panel8.Paint
+    Private Sub Panel8_Paint(sender As Object, e As PaintEventArgs)
 
     End Sub
 
@@ -172,7 +172,7 @@
         student.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -202,7 +202,7 @@
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
-
+        staff.Show()
     End Sub
 
     Private Sub PictureBox4_Click(sender As Object, e As EventArgs) Handles PictureBox4.Click

@@ -12,12 +12,33 @@ Public Class signup
 
             Try
                 connection.Open()
-                Dim sql As String = "update staff set password = '" & p1 & "' where ec_number = '" & ec_number & "' and email = '" & email & "'"
-                Dim Command As MySqlCommand = New MySqlCommand(sql, connection)
-                Dim Reader As MySqlDataReader = Command.ExecuteReader
-                Me.Hide()
-                login.Show()
+                Dim dr0 As MySqlDataReader
+                Dim sql0 As String = "select * FROM staff where  ec_number = '" & ec_number & "' AND email = '" & email & "'"
+                Dim cmd As MySqlCommand = New MySqlCommand(sql0, connection)
+                dr0 = cmd.ExecuteReader()
+                Dim total As Double = 0
+
+
+                If (dr0.HasRows()) Then
+                    connection.Close()
+
+                    connection.Open()
+
+                    Dim sql As String = "update staff set password = '" & p1 & "' where ec_number = '" & ec_number & "' and email = '" & email & "'"
+                    Dim Command As MySqlCommand = New MySqlCommand(sql, connection)
+                    Dim Reader As MySqlDataReader = Command.ExecuteReader
+                    connection.Close()
+                    Me.Hide()
+                    login.Show()
+                Else
+                    connection.Close()
+                    MsgBox("Credidentals not found")
+                End If
+
+
             Catch ex As Exception
+
+
 
                 MsgBox("Sorry  we could not verify your credidentals" + ex.Message)
 

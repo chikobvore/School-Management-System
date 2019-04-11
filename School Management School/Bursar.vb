@@ -24,7 +24,7 @@
         staff.Show()
     End Sub
 
-    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) 
         view_sponsors.Show()
     End Sub
 End Class
