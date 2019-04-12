@@ -4,4 +4,8 @@
         Form1.Dispose()
         login.Show()
     End Sub
+
+    Private Sub CrystalReportViewer1_Load(sender As Object, e As EventArgs) Handles CrystalReportViewer1.Load
+        MsgBox("Error retrieving information from dataset")
+    End Sub
 End Class
