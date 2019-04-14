@@ -215,7 +215,7 @@ Partial Class Form1
         Me.MenuStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13})
         Me.MenuStrip5.Location = New System.Drawing.Point(68, 19)
         Me.MenuStrip5.Name = "MenuStrip5"
-        Me.MenuStrip5.Size = New System.Drawing.Size(224, 33)
+        Me.MenuStrip5.Size = New System.Drawing.Size(104, 33)
         Me.MenuStrip5.TabIndex = 1
         Me.MenuStrip5.Text = "MenuStrip5"
         '
@@ -264,7 +264,7 @@ Partial Class Form1
         Me.MenuStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem9})
         Me.MenuStrip4.Location = New System.Drawing.Point(68, 19)
         Me.MenuStrip4.Name = "MenuStrip4"
-        Me.MenuStrip4.Size = New System.Drawing.Size(69, 33)
+        Me.MenuStrip4.Size = New System.Drawing.Size(189, 33)
         Me.MenuStrip4.TabIndex = 1
         Me.MenuStrip4.Text = "MenuStrip4"
         '
@@ -279,19 +279,19 @@ Partial Class Form1
         'ToolStripMenuItem10
         '
         Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(163, 30)
+        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(180, 30)
         Me.ToolStripMenuItem10.Text = "New"
         '
         'ToolStripMenuItem11
         '
         Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(163, 30)
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(180, 30)
         Me.ToolStripMenuItem11.Text = "Overview"
         '
         'BalanToolStripMenuItem
         '
         Me.BalanToolStripMenuItem.Name = "BalanToolStripMenuItem"
-        Me.BalanToolStripMenuItem.Size = New System.Drawing.Size(163, 30)
+        Me.BalanToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
         Me.BalanToolStripMenuItem.Text = "Balances"
         '
         'Panel6
@@ -445,38 +445,38 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(174, 30)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'ToolStripMenuItem2
         '
         Me.ToolStripMenuItem2.Name = "ToolStripMenuItem2"
-        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(180, 30)
+        Me.ToolStripMenuItem2.Size = New System.Drawing.Size(174, 30)
         Me.ToolStripMenuItem2.Text = "Details"
         '
         'ToolStripMenuItem3
         '
         Me.ToolStripMenuItem3.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoodsToolStripMenuItem, Me.ServicesToolStripMenuItem, Me.FundsToolStripMenuItem})
         Me.ToolStripMenuItem3.Name = "ToolStripMenuItem3"
-        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(180, 30)
+        Me.ToolStripMenuItem3.Size = New System.Drawing.Size(174, 30)
         Me.ToolStripMenuItem3.Text = "Sponsored"
         '
         'GoodsToolStripMenuItem
         '
         Me.GoodsToolStripMenuItem.Name = "GoodsToolStripMenuItem"
-        Me.GoodsToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
+        Me.GoodsToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
         Me.GoodsToolStripMenuItem.Text = "Goods"
         '
         'ServicesToolStripMenuItem
         '
         Me.ServicesToolStripMenuItem.Name = "ServicesToolStripMenuItem"
-        Me.ServicesToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
+        Me.ServicesToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
         Me.ServicesToolStripMenuItem.Text = "Services"
         '
         'FundsToolStripMenuItem
         '
         Me.FundsToolStripMenuItem.Name = "FundsToolStripMenuItem"
-        Me.FundsToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
+        Me.FundsToolStripMenuItem.Size = New System.Drawing.Size(153, 30)
         Me.FundsToolStripMenuItem.Text = "Funds"
         '
         'Panel7

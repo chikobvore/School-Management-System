@@ -1,9 +1,11 @@
 ﻿Imports MySql.Data.MySqlClient
+Imports System.IO
+Imports System.Data
 Public Class summaries
     Dim con As String = "server=localhost;user id=root;database=kariangwe_high"
     Dim connection As New MySqlConnection(con)
     Private Sub summaries_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "SELECT student_id,amount,purpose,methods,payment_date from payments"
+        Dim sql As String = "SELECT Name,Surname,students.student_id ,amount,purpose,methods,payment_date from payments INNER JOIN students ON students.student_id = payments.student_id"
 
         Try
             Dim adapater As New MySqlDataAdapter(sql, connection)
@@ -160,7 +162,7 @@ Public Class summaries
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim sql As String = "SELECT student_id,amount,purpose,methods,payment_date from payments"
+        Dim sql As String = "SELECT Name,Surname,amount,purpose,methods,payment_date from payments INNER JOIN students ON students.student_id = payments.student_id"
 
         Try
             Dim adapater As New MySqlDataAdapter(sql, connection)
@@ -182,6 +184,64 @@ Public Class summaries
         Catch ex As Exception
             MsgBox(ex.Message())
         End Try
+
+    End Sub
+
+    Private Sub ToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem1.Click
+        Try
+            Dim newcsvfile As String = String.Empty
+
+            For Each column As DataGridViewColumn In data.Columns
+                newcsvfile = newcsvfile & column.HeaderText & ","
+
+            Next
+
+            newcsvfile = newcsvfile.TrimEnd(",")
+            newcsvfile = newcsvfile & vbCr & vbLf
+
+            For Each row As DataGridViewRow In data.Rows
+                For Each cell As DataGridViewCell In row.Cells
+
+                    newcsvfile = newcsvfile & cell.FormattedValue & ","
+
+                Next
+
+                newcsvfile = newcsvfile.TrimEnd(",")
+                newcsvfile = newcsvfile & vbCr & vbLf
+            Next
+            My.Computer.FileSystem.WriteAllText("payment.csv", newcsvfile, False)
+            MsgBox("Report successfully created")
+        Catch ex As Exception
+            MsgBox(ex.Message)
+        End Try
+
+    End Sub
+
+    Private Sub ToolStripMenuItem2_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem2.Click
+
+    End Sub
+
+    Private Sub ViewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ViewToolStripMenuItem.Click
+        Dim sql As String = "SELECT Name,Surname,students.student_id,Paid_amount,Balance from student_portal
+                        INNER JOIN students ON students.student_id =  student_portal.student_id WHERE Balance > 0"
+
+        Try
+            connection.Open()
+            Dim adapater As New MySqlDataAdapter(sql, connection)
+            Dim table As New DataTable()
+            Dim ds As New DataSet
+
+            adapater.Fill(table)
+            data.DataSource = table
+
+            Dim count As Integer = adapater.Fill(ds, "MY TABLE FROM DB")
+            connection.Close()
+
+        Catch ex As Exception
+            MsgBox(ex.Message())
+        End Try
+
+
 
     End Sub
 End Class

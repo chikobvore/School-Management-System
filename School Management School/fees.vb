@@ -12,120 +12,122 @@ Public Class fees
 
         Try
 
-        Catch ex As Exception
+            Dim term As Integer = list_term.SelectedItem
+            Dim year As String = list_year.SelectedItem
+            Dim lock As String = Str(term) + Str(year)
 
-        End Try
-        Dim term As Integer = list_term.SelectedItem
-        Dim year As String = list_year.SelectedItem
-        Dim lock As String = Str(term) + Str(year)
+            Dim heads(20) As String
+            Dim amounts(20) As Integer
 
-        Dim heads(20) As String
-        Dim amounts(20) As Integer
+            heads(1) = input_2.Text
+            If (heads(1) <> Nothing) Then
+                amounts(1) = input_2amount.Text
+            End If
 
-        heads(1) = input_2.Text
-        If (heads(1) <> Nothing) Then
-            amounts(1) = input_2amount.Text
-        End If
+            heads(0) = input_1.Text
+            If (heads(0) <> Nothing) Then
+                amounts(0) = input_1_amount.Text
+            End If
 
-        heads(0) = input_1.Text
-        If (heads(0) <> Nothing) Then
-            amounts(0) = input_1_amount.Text
-        End If
+            heads(2) = input_3.Text
+            If (heads(2) <> Nothing) Then
+                amounts(2) = input_3amount.Text
+            End If
 
-        heads(2) = input_3.Text
-        If (heads(2) <> Nothing) Then
-            amounts(2) = input_3amount.Text
-        End If
+            heads(3) = input_4.Text
+            If (heads(3) <> Nothing) Then
+                amounts(3) = input_4amount.Text
+            End If
 
-        heads(3) = input_4.Text
-        If (heads(3) <> Nothing) Then
-            amounts(3) = input_4amount.Text
-        End If
+            heads(4) = input_5.Text
+            If (heads(4) <> Nothing) Then
+                amounts(0) = input_5amount.Text
+            End If
 
-        heads(4) = input_5.Text
-        If (heads(4) <> Nothing) Then
-            amounts(0) = input_5amount.Text
-        End If
-
-        Dim total As Double = 0
-        Dim fees As Double = 0
+            Dim total As Double = 0
+            Dim fees As Double = 0
 
 
-        Dim i As Integer = 0
+            Dim i As Integer = 0
 
-        connection.Open()
-        Dim dr As MySqlDataReader
-        Dim sql3 As String = "select amount from fee_heads  where lock_key = '" & lock & "'"
-        Dim cmd As MySqlCommand = New MySqlCommand(sql3, connection)
-        dr = cmd.ExecuteReader()
-        If (dr.HasRows()) Then
-
-            While (dr.Read())
-                fees = fees + dr("Amount")
-            End While
-
-        End If
-        connection.Close()
-
-
-        While (heads(i) <> "")
-
-            Try
-                MsgBox(heads(i))
-                total = total + fees
-                connection.Open()
-                Dim sql As String = "Insert into fee_heads(fee_head,amount,lock_key) values('" & heads(i) & "','" & amounts(i) & "','" & lock & "')"
-                Dim Command As MySqlCommand = New MySqlCommand(sql, connection)
-                Dim Reader As MySqlDataReader = Command.ExecuteReader
-                total = total + amounts(i)
-
-            Catch ex As Exception
-                MsgBox(ex.Message)
-            Finally
-                i = i + 1
-                connection.Close()
-            End Try
-        End While
-        MsgBox("done")
-
-
-        connection.Open()
-        Dim sql5 As String = "update fees_structure set status = 'OLD'"
-        Dim Command1 As MySqlCommand = New MySqlCommand(sql5, connection)
-        Dim Reader1 As MySqlDataReader = Command1.ExecuteReader
-        connection.Close()
-
-
-
-        Try
             connection.Open()
-            Dim status As String = "current"
-            Dim sql1 As String = "insert into fees_structure(amount,term,year,lock_key,status) values('" & total & "','" & term & "','" & year & "','" & lock & "','" & status & "')"
-            Dim Command As MySqlCommand = New MySqlCommand(sql1, connection)
-            Dim Reader As MySqlDataReader = Command.ExecuteReader
-            MsgBox("Fees structure successfully set for " + Str(year) + " term " + Str(term))
-            Me.Dispose()
+            Dim dr As MySqlDataReader
+            Dim sql3 As String = "select amount from fee_heads  where lock_key = '" & lock & "'"
+            Dim cmd As MySqlCommand = New MySqlCommand(sql3, connection)
+            dr = cmd.ExecuteReader()
+            If (dr.HasRows()) Then
 
+                While (dr.Read())
+                    fees = fees + dr("Amount")
+                End While
+
+            End If
             connection.Close()
-        Catch ex As Exception
-            MsgBox(ex.Message())
+
+
+            While (heads(i) <> "")
+
+                Try
+                    MsgBox(heads(i))
+                    total = total + fees
+                    connection.Open()
+                    Dim sql As String = "Insert into fee_heads(fee_head,amount,lock_key) values('" & heads(i) & "','" & amounts(i) & "','" & lock & "')"
+                    Dim Command As MySqlCommand = New MySqlCommand(sql, connection)
+                    Dim Reader As MySqlDataReader = Command.ExecuteReader
+                    total = total + amounts(i)
+
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                Finally
+                    i = i + 1
+                    connection.Close()
+                End Try
+            End While
+            MsgBox("done")
+
+
+            connection.Open()
+            Dim sql5 As String = "update fees_structure set status = 'OLD'"
+            Dim Command1 As MySqlCommand = New MySqlCommand(sql5, connection)
+            Dim Reader1 As MySqlDataReader = Command1.ExecuteReader
             connection.Close()
+
+
+
             Try
-
                 connection.Open()
-                Dim sql2 As String = "update fees_structure set amount = '" & total & "',status = 'current' where lock_key = '" & lock & "'"
-                Dim Command As MySqlCommand = New MySqlCommand(sql2, connection)
+                Dim status As String = "current"
+                Dim sql1 As String = "insert into fees_structure(amount,term,year,lock_key,status) values('" & total & "','" & term & "','" & year & "','" & lock & "','" & status & "')"
+                Dim Command As MySqlCommand = New MySqlCommand(sql1, connection)
                 Dim Reader As MySqlDataReader = Command.ExecuteReader
-                MsgBox("Fees structure successfully updated for " + Str(year) + " term " + Str(term))
-
-                connection.Close()
+                MsgBox("Fees structure successfully set for " + Str(year) + " term " + Str(term))
                 Me.Dispose()
 
-            Catch ex1 As Exception
-                MsgBox(ex1.Message())
+                connection.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message())
+                connection.Close()
+                Try
+
+                    connection.Open()
+                    Dim sql2 As String = "update fees_structure set amount = '" & total & "',status = 'current' where lock_key = '" & lock & "'"
+                    Dim Command As MySqlCommand = New MySqlCommand(sql2, connection)
+                    Dim Reader As MySqlDataReader = Command.ExecuteReader
+                    MsgBox("Fees structure successfully updated for " + Str(year) + " term " + Str(term))
+
+                    connection.Close()
+                    Me.Dispose()
+
+                Catch ex1 As Exception
+                    MsgBox(ex1.Message())
+                End Try
+
             End Try
 
+        Catch ex As Exception
+            MsgBox(ex.Message)
         End Try
+
 
         Me.Dispose()
 

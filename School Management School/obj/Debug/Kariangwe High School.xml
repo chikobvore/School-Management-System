@@ -27,20 +27,5 @@ Kariangwe High School
 Represents a strongly typed in-memory cache of data.
 </summary>
 </member>
-<member name="T:School_Management_School.DataSet1.DataTable1DataTable">
-<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member>
-<member name="T:School_Management_School.DataSet1.DataTable1Row">
-<summary>
-Represents strongly named DataRow class.
-</summary>
-</member>
-<member name="T:School_Management_School.DataSet1.DataTable1RowChangeEvent">
-<summary>
-Row event argument class
-</summary>
-</member>
 </members>
 </doc>

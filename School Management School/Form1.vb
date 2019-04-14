@@ -73,7 +73,7 @@ Public Class Form1
     End Sub
 
     Private Sub BalanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BalanToolStripMenuItem.Click
-
+        balances.Show()
     End Sub
 
     Private Sub ToolStripMenuItem14_Click(sender As Object, e As EventArgs)
@@ -126,6 +126,14 @@ Public Class Form1
     End Sub
 
     Private Sub ReportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportsToolStripMenuItem.Click
-        reports.Show()
+
+    End Sub
+
+    Private Sub Panel11_Paint(sender As Object, e As PaintEventArgs) Handles Panel11.Paint
+
+    End Sub
+
+    Private Sub ToolStripMenuItem11_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem11.Click
+        overview.show()
     End Sub
 End Class

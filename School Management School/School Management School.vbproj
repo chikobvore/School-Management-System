@@ -107,6 +107,12 @@
     <Compile Include="assets.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="balances.Designer.vb">
+      <DependentUpon>balances.vb</DependentUpon>
+    </Compile>
+    <Compile Include="balances.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Bursar.Designer.vb">
       <DependentUpon>Bursar.vb</DependentUpon>
     </Compile>
@@ -119,18 +125,9 @@
     <Compile Include="clerk.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CrystalReport1.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="DataSet1.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DataSet1.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataSet1.vb">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="department.Designer.vb">
@@ -215,6 +212,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="overview.Designer.vb">
+      <DependentUpon>overview.vb</DependentUpon>
+    </Compile>
+    <Compile Include="overview.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="payment.Designer.vb">
       <DependentUpon>payment.vb</DependentUpon>
     </Compile>
@@ -225,12 +228,6 @@
       <DependentUpon>payment_plan.vb</DependentUpon>
     </Compile>
     <Compile Include="payment_plan.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="reports.Designer.vb">
-      <DependentUpon>reports.vb</DependentUpon>
-    </Compile>
-    <Compile Include="reports.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="services.Designer.vb">
@@ -305,12 +302,6 @@
     <Compile Include="Term.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="test.Designer.vb">
-      <DependentUpon>test.vb</DependentUpon>
-    </Compile>
-    <Compile Include="test.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Transfers.Designer.vb">
       <DependentUpon>Transfers.vb</DependentUpon>
     </Compile>
@@ -346,15 +337,14 @@
     <EmbeddedResource Include="assets.resx">
       <DependentUpon>assets.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="balances.resx">
+      <DependentUpon>balances.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bursar.resx">
       <DependentUpon>Bursar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="clerk.resx">
       <DependentUpon>clerk.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="department.resx">
       <DependentUpon>department.vb</DependentUpon>
@@ -395,14 +385,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="overview.resx">
+      <DependentUpon>overview.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="payment.resx">
       <DependentUpon>payment.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="payment_plan.resx">
       <DependentUpon>payment_plan.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="reports.resx">
-      <DependentUpon>reports.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="services.resx">
       <DependentUpon>services.vb</DependentUpon>
@@ -439,9 +429,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Term.resx">
       <DependentUpon>Term.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="test.resx">
-      <DependentUpon>test.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Transfers.resx">
       <DependentUpon>Transfers.vb</DependentUpon>

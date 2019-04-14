@@ -34,12 +34,80 @@ Public Class payment
                 connection.Open()
                 Dim Command As MySqlCommand = New MySqlCommand(sql, connection)
                 Dim Reader As MySqlDataReader = Command.ExecuteReader
+                connection.Close()
+
+                Try
+                    connection.Open()
+                    Dim dr As MySqlDataReader
+                    Dim sql1 As String = "SELECT amount from payments where student_id like '" & reg_num & "'"
+
+                    Dim cmd As MySqlCommand = New MySqlCommand(sql1, connection)
+                    dr = cmd.ExecuteReader()
+                    Dim total As Double = 0
+
+
+                    If (dr.HasRows()) Then
+
+                        While (dr.Read())
+                            total = total + dr("amount")
+                        End While
+
+
+                    End If
+                    connection.Close()
+
+                    Try
+                        connection.Open()
+                        Dim dr1 As MySqlDataReader
+                        Dim current As String = "current"
+                        Dim sql2 As String = "SELECT amount from fees_structure where status = '" & current & "'"
+
+                        Dim cmd1 As MySqlCommand = New MySqlCommand(sql2, connection)
+                        dr1 = cmd1.ExecuteReader()
+
+                        Dim amount1 As Double = 0
+
+
+                        If (dr1.HasRows()) Then
+
+                            While (dr1.Read())
+                                amount1 = dr1("amount")
+                            End While
+                        End If
+                        Dim balance As Double
+                        balance = amount1 - total
+                        connection.Close()
+
+                        Try
+                            connection.Open()
+                            Dim sql3 As String = "INSERT INTO student_portal(student_id,Paid_amount,Balance)VALUES('" & reg_num & "','" & total & "', '" & balance & "')"
+                            Dim Command1 As MySqlCommand = New MySqlCommand(sql3, connection)
+                            Dim Reade1r As MySqlDataReader = Command1.ExecuteReader
+                            connection.Close()
+                        Catch ex As Exception
+                            connection.Close()
+                            connection.Open()
+                            Dim sql4 As String = "UPDATE student_portal SET Paid_amount = '" & total & "' ,Balance = '" & balance & "' WHERE student_id = '" & reg_num & "'"
+                            Dim Command1 As MySqlCommand = New MySqlCommand(sql4, connection)
+                            Dim Reade1r As MySqlDataReader = Command1.ExecuteReader
+                            connection.Close()
+                        End Try
+
+                    Catch ex As Exception
+                        MsgBox(ex.Message)
+                    End Try
+                Catch ex As Exception
+                    MsgBox(ex.Message)
+                End Try
+
+
+
 
                 Me.Dispose()
                 summaries.Show()
                 MsgBox("Payment was successfull")
             Catch ex As Exception
-                MsgBox(ex.Message())
+                MsgBox("Payment Failed" & ex.Message())
 
             Finally
                 connection.Close()
@@ -92,5 +160,9 @@ Public Class payment
             list_purpose.Items.Add("Pay all")
         End If
         connection.Close()
+    End Sub
+
+    Private Sub Data_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles data.CellContentClick
+
     End Sub
 End Class

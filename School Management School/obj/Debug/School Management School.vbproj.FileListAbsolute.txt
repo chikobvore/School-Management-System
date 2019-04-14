@@ -41,11 +41,6 @@ C:\Users\me\source\repos\School Management School\School Management School\obj\D
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Transfers.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.Term.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.statistics.resources
-C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
-C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.ReportSource.dll
-C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.Shared.dll
-C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.Windows.Forms.dll
-C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\FlashControlV71.dll
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
@@ -60,10 +55,10 @@ C:\Users\me\source\repos\School Management School\School Management School\bin\D
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\ShockwaveFlashObjects.dll
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\me\source\repos\School Management School\School Management School\bin\Debug\stdole.dll
-C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.reports.resources
-C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.test.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.sponsoredfunds.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.sponsoredservices.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.addassert.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.assets.resources
 C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.updatestudent.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.overview.resources
+C:\Users\me\source\repos\School Management School\School Management School\obj\Debug\School_Management_School.balances.resources
