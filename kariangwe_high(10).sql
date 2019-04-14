@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 11, 2019 at 11:07 AM
+-- Generation Time: Apr 14, 2019 at 04:03 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -127,8 +127,7 @@ CREATE TABLE `fees_structure` (
 --
 
 INSERT INTO `fees_structure` (`fees_id`, `Amount`, `year`, `term`, `lock_key`, `status`) VALUES
-(13, 100, '2019', 1, ' 1 2019', 'OLD'),
-(14, 500, '2019', 2, ' 2 2019', 'current');
+(19, 750, '2019', 1, ' 1 2019', 'current');
 
 -- --------------------------------------------------------
 
@@ -148,10 +147,10 @@ CREATE TABLE `fee_heads` (
 --
 
 INSERT INTO `fee_heads` (`fee_head_id`, `Fee_head`, `Amount`, `lock_key`) VALUES
-(39, 'jhygb', 20, ' 1 2019'),
-(40, 'khu', 50, ' 1 2019'),
-(41, 'hjyv', 30, ' 1 2019'),
-(42, ',jhuk', 500, ' 2 2019');
+(48, 'Levy', 100, ' 1 2019'),
+(49, 'Transport', 200, ' 1 2019'),
+(50, 'Tuition ', 350, ' 1 2019'),
+(51, 'development', 100, ' 1 2019');
 
 -- --------------------------------------------------------
 
@@ -176,8 +175,12 @@ CREATE TABLE `payments` (
 --
 
 INSERT INTO `payments` (`payment_id`, `student_id`, `Amount`, `purpose`, `methods`, `Payment_date`, `student_class`, `Term`, `combination`) VALUES
+(1, '1900B', 245, 'Tuition', 'RTGS', '4/14/2019 12:29:11 PM', 'Blue', '1', '1Blue'),
 (11, '1900B', 245, 'Tuition', 'RTGS', '4/5/2019 5:34:43 PM', 'Blue', '1', '1Blue'),
-(12, '1903B', 250, 'Tuition', 'RTGS', '4/5/2019 5:42:34 PM', 'Blue', '1', '1Blue');
+(12, '1903B', 250, 'Tuition', 'RTGS', '4/5/2019 5:42:34 PM', 'Blue', '1', '1Blue'),
+(13, '1900B', 25, 'Tuition', 'RTGS', '4/14/2019 12:38:09 PM', 'Blue', '1', '1Blue'),
+(14, '1904G', 200, 'Tuition', 'RTGS', '4/14/2019 1:34:00 PM', 'Blue', '1', '1Blue'),
+(15, '1904G', 100, 'Tuition', 'RTGS', '4/14/2019 1:35:59 PM', 'Blue', '1', '1Blue');
 
 -- --------------------------------------------------------
 
@@ -335,7 +338,30 @@ INSERT INTO `students` (`student_id`, `Name`, `Surname`, `Date_of_Birth`, `Gende
 ('1900B', 'alfred', 'marombedsa', '15/15/94', 'Male', 'h6', 4, 'GREEN', 'Donors', 'Nyaradso', '0982'),
 ('1901B', 'alfred', 'marombedsa', '15/15/94', 'Male', '', 3, 'BLUE', 'Parent', '', ''),
 ('1902B', 'tinashe', 'imbwaa', '10/03/2010', 'Male', '', 5, 'BLUE', 'Parent', '', ''),
-('1903B', 'nyasha', 'chikobvore', '02/02/98', 'Male', '', 1, 'BLUE', 'Parent', '', '');
+('1903B', 'nyasha', 'chikobvore', '02/02/98', 'Male', '', 1, 'BLUE', 'Parent', '', ''),
+('1904G', 'Musoro', 'wegomo', '02/02/11', 'Female', 'H5 Belvedere', 2, 'GREEN', 'Donors', 'Tatenda ', 'Mudiwa'),
+('1905G', 'Nyasha', 'chetse', '02/02/01', 'Female', 'HARARE', 3, 'GREEN', 'Parent', 'Alpha', 'omega');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `student_portal`
+--
+
+CREATE TABLE `student_portal` (
+  `portal_id` int(11) NOT NULL,
+  `student_id` varchar(10) DEFAULT NULL,
+  `Paid_amount` double DEFAULT NULL,
+  `Balance` double DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student_portal`
+--
+
+INSERT INTO `student_portal` (`portal_id`, `student_id`, `Paid_amount`, `Balance`) VALUES
+(1, '1900B', 515, -15),
+(2, '1904G', 300, 200);
 
 -- --------------------------------------------------------
 
@@ -370,12 +396,6 @@ INSERT INTO `withdraws` (`transaction_id`, `Transaction_date`, `Department_id`, 
 ALTER TABLE `allocations`
   ADD PRIMARY KEY (`Allocation_id`),
   ADD KEY `Department_id` (`Department_id`);
-
---
--- Indexes for table `asserts`
---
-ALTER TABLE `asserts`
-  ADD PRIMARY KEY (`ReferenceNumber`);
 
 --
 -- Indexes for table `cooperate_description`
@@ -457,6 +477,13 @@ ALTER TABLE `students`
   ADD PRIMARY KEY (`student_id`);
 
 --
+-- Indexes for table `student_portal`
+--
+ALTER TABLE `student_portal`
+  ADD PRIMARY KEY (`portal_id`),
+  ADD UNIQUE KEY `student_id` (`student_id`);
+
+--
 -- Indexes for table `withdraws`
 --
 ALTER TABLE `withdraws`
@@ -474,12 +501,6 @@ ALTER TABLE `allocations`
   MODIFY `Allocation_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT for table `asserts`
---
-ALTER TABLE `asserts`
-  MODIFY `ReferenceNumber` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
-
---
 -- AUTO_INCREMENT for table `cooperate_description`
 --
 ALTER TABLE `cooperate_description`
@@ -495,107 +516,35 @@ ALTER TABLE `departments`
 -- AUTO_INCREMENT for table `fees_structure`
 --
 ALTER TABLE `fees_structure`
-  MODIFY `fees_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `fees_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `fee_heads`
 --
 ALTER TABLE `fee_heads`
-  MODIFY `fee_head_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `fee_head_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT for table `payments`
 --
 ALTER TABLE `payments`
-  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `payment_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
--- AUTO_INCREMENT for table `school_account`
+-- AUTO_INCREMENT for table `student_portal`
 --
-ALTER TABLE `school_account`
-  MODIFY `account_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `sponsored_funds`
---
-ALTER TABLE `sponsored_funds`
-  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
-
---
--- AUTO_INCREMENT for table `sponsored_items`
---
-ALTER TABLE `sponsored_items`
-  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `sponsored_service`
---
-ALTER TABLE `sponsored_service`
-  MODIFY `items_id` int(11) NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT for table `sponsor_details`
---
-ALTER TABLE `sponsor_details`
-  MODIFY `sponsor_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
-
---
--- AUTO_INCREMENT for table `staff`
---
-ALTER TABLE `staff`
-  MODIFY `teacher_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
-
---
--- AUTO_INCREMENT for table `withdraws`
---
-ALTER TABLE `withdraws`
-  MODIFY `transaction_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `student_portal`
+  MODIFY `portal_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
 --
 
 --
--- Constraints for table `allocations`
+-- Constraints for table `student_portal`
 --
-ALTER TABLE `allocations`
-  ADD CONSTRAINT `allocations_ibfk_1` FOREIGN KEY (`Department_id`) REFERENCES `departments` (`Department_id`);
-
---
--- Constraints for table `cooperate_description`
---
-ALTER TABLE `cooperate_description`
-  ADD CONSTRAINT `cooperate_description_ibfk_1` FOREIGN KEY (`Representative`) REFERENCES `sponsor_details` (`sponsor_id`);
-
---
--- Constraints for table `payments`
---
-ALTER TABLE `payments`
-  ADD CONSTRAINT `payments_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `students` (`student_id`);
-
---
--- Constraints for table `sponsored_funds`
---
-ALTER TABLE `sponsored_funds`
-  ADD CONSTRAINT `sponsored_funds_ibfk_1` FOREIGN KEY (`sponsor_id`) REFERENCES `sponsor_details` (`sponsor_id`);
-
---
--- Constraints for table `sponsored_items`
---
-ALTER TABLE `sponsored_items`
-  ADD CONSTRAINT `sponsored_items_ibfk_1` FOREIGN KEY (`sponsor_id`) REFERENCES `sponsor_details` (`sponsor_id`);
-
---
--- Constraints for table `sponsored_service`
---
-ALTER TABLE `sponsored_service`
-  ADD CONSTRAINT `sponsored_service_ibfk_1` FOREIGN KEY (`sponsor_id`) REFERENCES `sponsor_details` (`sponsor_id`);
-
---
--- Constraints for table `withdraws`
---
-ALTER TABLE `withdraws`
-  ADD CONSTRAINT `withdraws_ibfk_1` FOREIGN KEY (`Department_id`) REFERENCES `departments` (`Department_id`);
+ALTER TABLE `student_portal`
+  ADD CONSTRAINT `student_portal_ibfk_1` FOREIGN KEY (`student_id`) REFERENCES `students` (`student_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
