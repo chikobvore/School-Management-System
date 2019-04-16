@@ -209,7 +209,7 @@ Public Class summaries
                 newcsvfile = newcsvfile.TrimEnd(",")
                 newcsvfile = newcsvfile & vbCr & vbLf
             Next
-            My.Computer.FileSystem.WriteAllText("payment.csv", newcsvfile, False)
+            My.Computer.FileSystem.WriteAllText("../../../payment.csv", newcsvfile, False)
             MsgBox("Report successfully created")
         Catch ex As Exception
             MsgBox(ex.Message)

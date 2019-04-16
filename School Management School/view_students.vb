@@ -65,7 +65,7 @@ Public Class view_students
                 newcsvfile = newcsvfile.TrimEnd(",")
                 newcsvfile = newcsvfile & vbCr & vbLf
             Next
-            My.Computer.FileSystem.WriteAllText("Students.csv", newcsvfile, False)
+            My.Computer.FileSystem.WriteAllText("../../../Students.csv", newcsvfile, False)
             MsgBox("Report successfully created")
         Catch ex As Exception
             MsgBox(ex.Message)
