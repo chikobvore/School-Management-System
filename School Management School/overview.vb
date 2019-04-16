@@ -58,4 +58,9 @@ Public Class overview
         End Try
 
     End Sub
+
+    Private Sub SchoolToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SchoolToolStripMenuItem.Click
+        Me.Dispose()
+
+    End Sub
 End Class

@@ -25,28 +25,7 @@ Partial Class clerk
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(clerk))
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox11 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
-        Me.Panel11 = New System.Windows.Forms.Panel()
-        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
-        Me.MenuStrip5 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem14 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem16 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Panel10 = New System.Windows.Forms.Panel()
-        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
-        Me.MenuStrip4 = New System.Windows.Forms.MenuStrip()
-        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem10 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripMenuItem12 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Panel9 = New System.Windows.Forms.Panel()
         Me.Panel13 = New System.Windows.Forms.Panel()
         Me.PictureBox3 = New System.Windows.Forms.PictureBox()
         Me.Panel12 = New System.Windows.Forms.Panel()
@@ -82,16 +61,26 @@ Partial Class clerk
         Me.Panel14 = New System.Windows.Forms.Panel()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.PictureBox10 = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip5 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem13 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem15 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ReportsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Panel10 = New System.Windows.Forms.Panel()
+        Me.PictureBox9 = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip4 = New System.Windows.Forms.MenuStrip()
+        Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.PictureBox8 = New System.Windows.Forms.PictureBox()
+        Me.MenuStrip3 = New System.Windows.Forms.MenuStrip()
+        Me.ToolStripMenuItem5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem6 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem7 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem8 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem11 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BalanToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripMenuItem9 = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.Panel11.SuspendLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip5.SuspendLayout()
-        Me.MenuStrip3.SuspendLayout()
-        Me.Panel10.SuspendLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.MenuStrip4.SuspendLayout()
-        Me.Panel9.SuspendLayout()
         Me.Panel13.SuspendLayout()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -112,6 +101,15 @@ Partial Class clerk
         Me.Panel2.SuspendLayout()
         Me.Panel14.SuspendLayout()
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel11.SuspendLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip5.SuspendLayout()
+        Me.Panel10.SuspendLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip4.SuspendLayout()
+        Me.Panel9.SuspendLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.MenuStrip3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button4
@@ -136,106 +134,6 @@ Partial Class clerk
         Me.PictureBox11.TabIndex = 2
         Me.PictureBox11.TabStop = False
         '
-        'PictureBox8
-        '
-        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
-        Me.PictureBox8.Location = New System.Drawing.Point(-7, 3)
-        Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(80, 75)
-        Me.PictureBox8.TabIndex = 0
-        Me.PictureBox8.TabStop = False
-        '
-        'Panel11
-        '
-        Me.Panel11.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Panel11.Controls.Add(Me.PictureBox10)
-        Me.Panel11.Controls.Add(Me.MenuStrip5)
-        Me.Panel11.Location = New System.Drawing.Point(14, 556)
-        Me.Panel11.Name = "Panel11"
-        Me.Panel11.Size = New System.Drawing.Size(200, 70)
-        Me.Panel11.TabIndex = 7
-        '
-        'PictureBox10
-        '
-        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
-        Me.PictureBox10.Location = New System.Drawing.Point(-2, 3)
-        Me.PictureBox10.Name = "PictureBox10"
-        Me.PictureBox10.Size = New System.Drawing.Size(67, 67)
-        Me.PictureBox10.TabIndex = 0
-        Me.PictureBox10.TabStop = False
-        '
-        'MenuStrip5
-        '
-        Me.MenuStrip5.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13})
-        Me.MenuStrip5.Location = New System.Drawing.Point(68, 19)
-        Me.MenuStrip5.Name = "MenuStrip5"
-        Me.MenuStrip5.Size = New System.Drawing.Size(104, 33)
-        Me.MenuStrip5.TabIndex = 1
-        Me.MenuStrip5.Text = "MenuStrip5"
-        '
-        'ToolStripMenuItem13
-        '
-        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem14, Me.ToolStripMenuItem15, Me.ToolStripMenuItem16})
-        Me.ToolStripMenuItem13.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
-        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(96, 29)
-        Me.ToolStripMenuItem13.Text = "Statistics"
-        '
-        'ToolStripMenuItem14
-        '
-        Me.ToolStripMenuItem14.Name = "ToolStripMenuItem14"
-        Me.ToolStripMenuItem14.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem14.Text = "Students"
-        '
-        'ToolStripMenuItem15
-        '
-        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
-        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem15.Text = "Staff"
-        '
-        'ToolStripMenuItem16
-        '
-        Me.ToolStripMenuItem16.Name = "ToolStripMenuItem16"
-        Me.ToolStripMenuItem16.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem16.Text = "Teachers"
-        '
-        'MenuStrip3
-        '
-        Me.MenuStrip3.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem5})
-        Me.MenuStrip3.Location = New System.Drawing.Point(76, 22)
-        Me.MenuStrip3.Name = "MenuStrip3"
-        Me.MenuStrip3.Size = New System.Drawing.Size(125, 33)
-        Me.MenuStrip3.TabIndex = 1
-        Me.MenuStrip3.Text = "MenuStrip3"
-        '
-        'ToolStripMenuItem5
-        '
-        Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem8})
-        Me.ToolStripMenuItem5.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
-        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(117, 29)
-        Me.ToolStripMenuItem5.Text = "Allocations"
-        '
-        'ToolStripMenuItem6
-        '
-        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
-        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(193, 30)
-        Me.ToolStripMenuItem6.Text = "New"
-        '
-        'ToolStripMenuItem7
-        '
-        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
-        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(193, 30)
-        Me.ToolStripMenuItem7.Text = "Departments"
-        '
-        'ToolStripMenuItem8
-        '
-        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
-        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(193, 30)
-        Me.ToolStripMenuItem8.Text = "Expenses"
-        '
         'Button5
         '
         Me.Button5.BackColor = System.Drawing.SystemColors.ControlLightLight
@@ -247,71 +145,6 @@ Partial Class clerk
         Me.Button5.TabIndex = 1
         Me.Button5.Text = "Summaries"
         Me.Button5.UseVisualStyleBackColor = False
-        '
-        'Panel10
-        '
-        Me.Panel10.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Panel10.Controls.Add(Me.PictureBox9)
-        Me.Panel10.Controls.Add(Me.MenuStrip4)
-        Me.Panel10.Location = New System.Drawing.Point(11, 475)
-        Me.Panel10.Name = "Panel10"
-        Me.Panel10.Size = New System.Drawing.Size(200, 75)
-        Me.Panel10.TabIndex = 6
-        '
-        'PictureBox9
-        '
-        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
-        Me.PictureBox9.Location = New System.Drawing.Point(3, -2)
-        Me.PictureBox9.Name = "PictureBox9"
-        Me.PictureBox9.Size = New System.Drawing.Size(70, 69)
-        Me.PictureBox9.TabIndex = 0
-        Me.PictureBox9.TabStop = False
-        '
-        'MenuStrip4
-        '
-        Me.MenuStrip4.Dock = System.Windows.Forms.DockStyle.None
-        Me.MenuStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem9})
-        Me.MenuStrip4.Location = New System.Drawing.Point(68, 19)
-        Me.MenuStrip4.Name = "MenuStrip4"
-        Me.MenuStrip4.Size = New System.Drawing.Size(69, 33)
-        Me.MenuStrip4.TabIndex = 1
-        Me.MenuStrip4.Text = "MenuStrip4"
-        '
-        'ToolStripMenuItem9
-        '
-        Me.ToolStripMenuItem9.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem10, Me.ToolStripMenuItem11, Me.ToolStripMenuItem12})
-        Me.ToolStripMenuItem9.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
-        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(61, 29)
-        Me.ToolStripMenuItem9.Text = "Fees"
-        '
-        'ToolStripMenuItem10
-        '
-        Me.ToolStripMenuItem10.Name = "ToolStripMenuItem10"
-        Me.ToolStripMenuItem10.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem10.Text = "Students"
-        '
-        'ToolStripMenuItem11
-        '
-        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
-        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem11.Text = "Staff"
-        '
-        'ToolStripMenuItem12
-        '
-        Me.ToolStripMenuItem12.Name = "ToolStripMenuItem12"
-        Me.ToolStripMenuItem12.Size = New System.Drawing.Size(157, 30)
-        Me.ToolStripMenuItem12.Text = "Teachers"
-        '
-        'Panel9
-        '
-        Me.Panel9.BackColor = System.Drawing.SystemColors.ControlLightLight
-        Me.Panel9.Controls.Add(Me.PictureBox8)
-        Me.Panel9.Controls.Add(Me.MenuStrip3)
-        Me.Panel9.Location = New System.Drawing.Point(11, 392)
-        Me.Panel9.Name = "Panel9"
-        Me.Panel9.Size = New System.Drawing.Size(200, 75)
-        Me.Panel9.TabIndex = 5
         '
         'Panel13
         '
@@ -426,8 +259,8 @@ Partial Class clerk
         Me.Panel3.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Panel3.Controls.Add(Me.Panel11)
         Me.Panel3.Controls.Add(Me.Panel10)
-        Me.Panel3.Controls.Add(Me.Panel6)
         Me.Panel3.Controls.Add(Me.Panel9)
+        Me.Panel3.Controls.Add(Me.Panel6)
         Me.Panel3.Controls.Add(Me.Panel8)
         Me.Panel3.Controls.Add(Me.Panel7)
         Me.Panel3.Controls.Add(Me.Label2)
@@ -650,6 +483,159 @@ Partial Class clerk
         Me.PictureBox12.TabIndex = 0
         Me.PictureBox12.TabStop = False
         '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel11.Controls.Add(Me.PictureBox10)
+        Me.Panel11.Controls.Add(Me.MenuStrip5)
+        Me.Panel11.Location = New System.Drawing.Point(8, 556)
+        Me.Panel11.Name = "Panel11"
+        Me.Panel11.Size = New System.Drawing.Size(200, 70)
+        Me.Panel11.TabIndex = 10
+        '
+        'PictureBox10
+        '
+        Me.PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), System.Drawing.Image)
+        Me.PictureBox10.Location = New System.Drawing.Point(-2, 3)
+        Me.PictureBox10.Name = "PictureBox10"
+        Me.PictureBox10.Size = New System.Drawing.Size(67, 67)
+        Me.PictureBox10.TabIndex = 0
+        Me.PictureBox10.TabStop = False
+        '
+        'MenuStrip5
+        '
+        Me.MenuStrip5.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip5.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem13})
+        Me.MenuStrip5.Location = New System.Drawing.Point(68, 19)
+        Me.MenuStrip5.Name = "MenuStrip5"
+        Me.MenuStrip5.Size = New System.Drawing.Size(224, 33)
+        Me.MenuStrip5.TabIndex = 1
+        Me.MenuStrip5.Text = "MenuStrip5"
+        '
+        'ToolStripMenuItem13
+        '
+        Me.ToolStripMenuItem13.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem15, Me.ReportsToolStripMenuItem})
+        Me.ToolStripMenuItem13.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem13.Name = "ToolStripMenuItem13"
+        Me.ToolStripMenuItem13.Size = New System.Drawing.Size(96, 29)
+        Me.ToolStripMenuItem13.Text = "Statistics"
+        '
+        'ToolStripMenuItem15
+        '
+        Me.ToolStripMenuItem15.Name = "ToolStripMenuItem15"
+        Me.ToolStripMenuItem15.Size = New System.Drawing.Size(217, 30)
+        Me.ToolStripMenuItem15.Text = "School statistics"
+        '
+        'ReportsToolStripMenuItem
+        '
+        Me.ReportsToolStripMenuItem.Name = "ReportsToolStripMenuItem"
+        Me.ReportsToolStripMenuItem.Size = New System.Drawing.Size(217, 30)
+        Me.ReportsToolStripMenuItem.Text = "Reports"
+        '
+        'Panel10
+        '
+        Me.Panel10.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel10.Controls.Add(Me.PictureBox9)
+        Me.Panel10.Controls.Add(Me.MenuStrip4)
+        Me.Panel10.Location = New System.Drawing.Point(5, 475)
+        Me.Panel10.Name = "Panel10"
+        Me.Panel10.Size = New System.Drawing.Size(200, 75)
+        Me.Panel10.TabIndex = 9
+        '
+        'PictureBox9
+        '
+        Me.PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), System.Drawing.Image)
+        Me.PictureBox9.Location = New System.Drawing.Point(3, -2)
+        Me.PictureBox9.Name = "PictureBox9"
+        Me.PictureBox9.Size = New System.Drawing.Size(70, 69)
+        Me.PictureBox9.TabIndex = 0
+        Me.PictureBox9.TabStop = False
+        '
+        'MenuStrip4
+        '
+        Me.MenuStrip4.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem9})
+        Me.MenuStrip4.Location = New System.Drawing.Point(68, 19)
+        Me.MenuStrip4.Name = "MenuStrip4"
+        Me.MenuStrip4.Size = New System.Drawing.Size(69, 33)
+        Me.MenuStrip4.TabIndex = 1
+        Me.MenuStrip4.Text = "MenuStrip4"
+        '
+        'Panel9
+        '
+        Me.Panel9.BackColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Panel9.Controls.Add(Me.PictureBox8)
+        Me.Panel9.Controls.Add(Me.MenuStrip3)
+        Me.Panel9.Location = New System.Drawing.Point(5, 392)
+        Me.Panel9.Name = "Panel9"
+        Me.Panel9.Size = New System.Drawing.Size(200, 75)
+        Me.Panel9.TabIndex = 8
+        '
+        'PictureBox8
+        '
+        Me.PictureBox8.Image = CType(resources.GetObject("PictureBox8.Image"), System.Drawing.Image)
+        Me.PictureBox8.Location = New System.Drawing.Point(-7, 3)
+        Me.PictureBox8.Name = "PictureBox8"
+        Me.PictureBox8.Size = New System.Drawing.Size(80, 75)
+        Me.PictureBox8.TabIndex = 0
+        Me.PictureBox8.TabStop = False
+        '
+        'MenuStrip3
+        '
+        Me.MenuStrip3.Dock = System.Windows.Forms.DockStyle.None
+        Me.MenuStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem5})
+        Me.MenuStrip3.Location = New System.Drawing.Point(76, 22)
+        Me.MenuStrip3.Name = "MenuStrip3"
+        Me.MenuStrip3.Size = New System.Drawing.Size(125, 33)
+        Me.MenuStrip3.TabIndex = 1
+        Me.MenuStrip3.Text = "MenuStrip3"
+        '
+        'ToolStripMenuItem5
+        '
+        Me.ToolStripMenuItem5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem6, Me.ToolStripMenuItem7, Me.ToolStripMenuItem8})
+        Me.ToolStripMenuItem5.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem5.Name = "ToolStripMenuItem5"
+        Me.ToolStripMenuItem5.Size = New System.Drawing.Size(117, 29)
+        Me.ToolStripMenuItem5.Text = "Allocations"
+        '
+        'ToolStripMenuItem6
+        '
+        Me.ToolStripMenuItem6.Name = "ToolStripMenuItem6"
+        Me.ToolStripMenuItem6.Size = New System.Drawing.Size(193, 30)
+        Me.ToolStripMenuItem6.Text = "New"
+        '
+        'ToolStripMenuItem7
+        '
+        Me.ToolStripMenuItem7.Name = "ToolStripMenuItem7"
+        Me.ToolStripMenuItem7.Size = New System.Drawing.Size(193, 30)
+        Me.ToolStripMenuItem7.Text = "Departments"
+        '
+        'ToolStripMenuItem8
+        '
+        Me.ToolStripMenuItem8.Name = "ToolStripMenuItem8"
+        Me.ToolStripMenuItem8.Size = New System.Drawing.Size(193, 30)
+        Me.ToolStripMenuItem8.Text = "Expenses"
+        '
+        'ToolStripMenuItem11
+        '
+        Me.ToolStripMenuItem11.Name = "ToolStripMenuItem11"
+        Me.ToolStripMenuItem11.Size = New System.Drawing.Size(180, 30)
+        Me.ToolStripMenuItem11.Text = "Overview"
+        '
+        'BalanToolStripMenuItem
+        '
+        Me.BalanToolStripMenuItem.Name = "BalanToolStripMenuItem"
+        Me.BalanToolStripMenuItem.Size = New System.Drawing.Size(180, 30)
+        Me.BalanToolStripMenuItem.Text = "Balances"
+        '
+        'ToolStripMenuItem9
+        '
+        Me.ToolStripMenuItem9.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripMenuItem11, Me.BalanToolStripMenuItem})
+        Me.ToolStripMenuItem9.Font = New System.Drawing.Font("Nirmala UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ToolStripMenuItem9.Name = "ToolStripMenuItem9"
+        Me.ToolStripMenuItem9.Size = New System.Drawing.Size(61, 29)
+        Me.ToolStripMenuItem9.Text = "Fees"
+        '
         'clerk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -670,21 +656,6 @@ Partial Class clerk
         Me.Text = "clerk"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.Panel11.ResumeLayout(False)
-        Me.Panel11.PerformLayout()
-        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip5.ResumeLayout(False)
-        Me.MenuStrip5.PerformLayout()
-        Me.MenuStrip3.ResumeLayout(False)
-        Me.MenuStrip3.PerformLayout()
-        Me.Panel10.ResumeLayout(False)
-        Me.Panel10.PerformLayout()
-        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.MenuStrip4.ResumeLayout(False)
-        Me.MenuStrip4.PerformLayout()
-        Me.Panel9.ResumeLayout(False)
-        Me.Panel9.PerformLayout()
         Me.Panel13.ResumeLayout(False)
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -711,6 +682,21 @@ Partial Class clerk
         Me.Panel2.ResumeLayout(False)
         Me.Panel14.ResumeLayout(False)
         CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip5.ResumeLayout(False)
+        Me.MenuStrip5.PerformLayout()
+        Me.Panel10.ResumeLayout(False)
+        Me.Panel10.PerformLayout()
+        CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip4.ResumeLayout(False)
+        Me.MenuStrip4.PerformLayout()
+        Me.Panel9.ResumeLayout(False)
+        Me.Panel9.PerformLayout()
+        CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.MenuStrip3.ResumeLayout(False)
+        Me.MenuStrip3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -718,28 +704,7 @@ Partial Class clerk
 
     Friend WithEvents Button4 As Button
     Friend WithEvents PictureBox11 As PictureBox
-    Friend WithEvents PictureBox8 As PictureBox
-    Friend WithEvents Panel11 As Panel
-    Friend WithEvents PictureBox10 As PictureBox
-    Friend WithEvents MenuStrip5 As MenuStrip
-    Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem14 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem16 As ToolStripMenuItem
-    Friend WithEvents MenuStrip3 As MenuStrip
-    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
     Friend WithEvents Button5 As Button
-    Friend WithEvents Panel10 As Panel
-    Friend WithEvents PictureBox9 As PictureBox
-    Friend WithEvents MenuStrip4 As MenuStrip
-    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem10 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem11 As ToolStripMenuItem
-    Friend WithEvents ToolStripMenuItem12 As ToolStripMenuItem
-    Friend WithEvents Panel9 As Panel
     Friend WithEvents Panel13 As Panel
     Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents Panel12 As Panel
@@ -775,4 +740,23 @@ Partial Class clerk
     Friend WithEvents Panel14 As Panel
     Friend WithEvents Button6 As Button
     Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents PictureBox10 As PictureBox
+    Friend WithEvents MenuStrip5 As MenuStrip
+    Friend WithEvents ToolStripMenuItem13 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem15 As ToolStripMenuItem
+    Friend WithEvents ReportsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Panel10 As Panel
+    Friend WithEvents PictureBox9 As PictureBox
+    Friend WithEvents MenuStrip4 As MenuStrip
+    Friend WithEvents Panel9 As Panel
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents MenuStrip3 As MenuStrip
+    Friend WithEvents ToolStripMenuItem5 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem6 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem7 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem8 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem9 As ToolStripMenuItem
+    Friend WithEvents ToolStripMenuItem11 As ToolStripMenuItem
+    Friend WithEvents BalanToolStripMenuItem As ToolStripMenuItem
 End Class

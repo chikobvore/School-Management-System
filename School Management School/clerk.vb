@@ -38,4 +38,28 @@ Public Class clerk
         assets.Show()
 
     End Sub
+
+    Private Sub StudentsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles StudentsToolStripMenuItem.Click
+        view_students.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem4_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem4.Click
+        sponsoredfunds.Show()
+    End Sub
+
+    Private Sub BalanToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BalanToolStripMenuItem.Click
+        balances.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem11_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem11.Click
+        overview.Show()
+    End Sub
+
+    Private Sub ReportsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles ReportsToolStripMenuItem.Click
+        statistics.Show()
+    End Sub
+
+    Private Sub ToolStripMenuItem15_Click(sender As Object, e As EventArgs) Handles ToolStripMenuItem15.Click
+        statistics.Show()
+    End Sub
 End Class

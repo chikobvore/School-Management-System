@@ -5,7 +5,7 @@ Public Class balances
     Dim con As String = "server=localhost;user id=root;database=kariangwe_high"
     Dim connection As New MySqlConnection(con)
     Private Sub Balances_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim sql As String = "SELECT Name,Surname,students.student_id,Paid_amount,Balance from student_portal
+        Dim sql As String = "SELECT Name,Surname,form,student_class,students.student_id,Paid_amount,Balance from student_portal
                         INNER JOIN students ON students.student_id =  student_portal.student_id WHERE Balance > 0"
 
         Try
